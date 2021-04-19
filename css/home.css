@@ -1,0 +1,132 @@
+@import 'utilities.css';
+@import 'style.css';
+
+main {
+	height: 80%;
+	max-height: 100%;
+}
+
+/* Landing Page */
+
+.landing-page {
+	height: 100%;
+}
+
+.landing-header h1 {
+	font-size: 10vw;
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+.landing-header span,
+.landing-service-times span {
+	display: block;
+}
+
+.landing-theme h3 {
+	font-size: 4.6vw;
+	font-family: 'Dancing Script', cursive;
+}
+
+.landing-service-times h4 {
+	font-size: 3vw;
+	font-weight: 600;
+	letter-spacing: 5px;
+}
+
+/* Image Slider*/
+.image-slider {
+	position: relative;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 50vh;
+	border-radius: 5px;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.6s ease-in-out;
+}
+
+.slide .content h1 {
+	position: absolute;
+	bottom: 10px;
+	transform: translateX(-100%);
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #000;
+	padding: 0.5rem;
+	opacity: 0;
+}
+
+/* Current Slide */
+.slide.current {
+	opacity: 1;
+}
+
+.slide.current .content h1 {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all 0.6s ease-in-out 0.3s;
+}
+
+/* Slider buttons */
+.buttons button {
+	border: 2px solid #bbb;
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
+	padding: 0.7rem;
+	border-radius: 50%;
+	outline: none;
+}
+
+.buttons button:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.buttons button#next {
+	position: absolute;
+	top: 50%;
+	right: 7%;
+}
+
+.buttons button#prev {
+	position: absolute;
+	top: 50%;
+	left: 7%;
+}
+
+/* Image Slider Background Images */
+.slide:first-child {
+	background-image: url(../images/image-slider-1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slide:nth-child(2) {
+	background-image: url(../images/image-slider-2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slide:nth-child(3) {
+	background-image: url(../images/image-slider-3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slide:nth-child(4) {
+	background-image: url(../images/image-slider-4.jpg);
+	background-position: center;
+	background-size: cover;
+}
