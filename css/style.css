@@ -63,6 +63,7 @@ header {
 .church {
 	display: flex;
 	align-items: center;
+	z-index: 3;
 }
 
 .church img {
@@ -86,6 +87,7 @@ header {
 	cursor: pointer;
 	overflow-x: hidden;
 	margin-right: 0.3rem;
+	z-index: 3;
 }
 
 .hamburger .line {
@@ -115,7 +117,7 @@ header {
 	background-color: var(--primary-color);
 	width: 100%;
 	right: 0;
-	top: 12vh;
+	top: 4vh;
 	clip-path: circle(100px at 100% -45%);
 	-webkit-clip-path: circle(100px at 100% -45%);
 	transition: all 1s ease-in;
