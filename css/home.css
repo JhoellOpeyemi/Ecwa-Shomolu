@@ -16,6 +16,8 @@ main {
 	font-size: 10vw;
 	font-weight: 900;
 	line-height: 1.1;
+	margin: 3rem 0 0.6rem 0;
+	white-space: nowrap;
 }
 
 .landing-header span,
@@ -26,6 +28,8 @@ main {
 .landing-theme h3 {
 	font-size: 4.6vw;
 	font-family: 'Dancing Script', cursive;
+	margin: 0 0 1.7rem 0;
+	white-space: nowrap;
 }
 
 .landing-service-times h4 {
@@ -80,6 +84,7 @@ main {
 
 /* Slider buttons */
 .buttons button {
+	display: none;
 	border: 2px solid #bbb;
 	background-color: transparent;
 	color: #fff;
